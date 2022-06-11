@@ -1,0 +1,34 @@
+<div>
+    <h2>Listado</h2>
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title><strong>Usuarios</strong> </mat-card-title>
+        <div class="btn-close">
+            <button mat-raised-button color="warn" (click)="closeList()"><mat-icon>close</mat-icon></button>
+        </div>
+      </mat-card-header>
+      <mat-card-content> 
+        <hr>
+        <br>
+        <div *ngIf="!seeList">
+            <h3>No hay usuarios registrados</h3>
+        </div>
+        <div *ngIf="seeList">
+            <mat-list role="list">
+            <mat-list-item role="listitem" *ngFor="let item of users; let i = index" >
+                <mat-icon class="material-icons" mat-list-icon>account_circle</mat-icon>
+                <div mat-line> <strong>ID Socio:</strong> {{item.idSocio}} | <strong>Nombre:</strong> {{item.nombre}} | <strong>Apellidos:</strong> {{item.apellidos}} | <strong>DNI:</strong> {{item.dni}} | <strong>Teléfono:</strong> {{item.telefono}} | <strong>Sexo:</strong> {{item.sexo}}</div>
+                <div>
+                <button title="borrar" (click)="onEdit(i)">
+                    <mat-icon title="editar" class="material-icons" style="color: blue;">edit</mat-icon>
+                </button>
+                <button title="borrar" (click)="onDelete(i)">
+                    <mat-icon class="material-icons" style="color: red;">delete</mat-icon>
+                </button>
+                </div>
+            </mat-list-item>
+            </mat-list>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>

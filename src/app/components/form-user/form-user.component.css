@@ -1,0 +1,43 @@
+*{
+    margin: 0 auto;
+}
+
+.container {
+    margin: 20px;
+    text-align: center;
+    background: #3000d647
+}
+
+form {
+    width: 400px;
+}
+
+h2 { 
+    margin: 20px; 
+    color:white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+input.ng-pristine.ng-invalid {
+    -webkit-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow:none;
+}
+
+.mat-form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.mat-raised-button {
+    margin-left:10px;
+}
+
+.btn-form {
+    margin-bottom: 10px;
+}
+
+button{
+    margin: 5px;
+}

@@ -1,0 +1,25 @@
+
+mat-card{
+    margin: 20px;
+    text-align: center;
+    background: #3000d647;
+}
+
+mat-card-header {
+    text-align: center;
+}
+
+a {
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    border-radius:8px;
+    text-decoration: none;
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+}
+
+mat-icon {
+    padding: 5px;
+}

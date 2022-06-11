@@ -1,0 +1,18 @@
+h2 { 
+    margin: 20px; 
+    color: purple;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+.btn-close {
+    text-align: right;
+    width: 100%;
+    margin-bottom: 10px;
+ 
+}
+
+mat-card{
+    background: #3000d647;
+}
